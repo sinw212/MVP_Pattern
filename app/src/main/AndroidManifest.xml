@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ww.mvp_pattern">
 
+    <!-- REST API를 위한 INTERNET 권한 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +17,7 @@
         android:theme="@style/Theme.MVP_Pattern"
         tools:targetApi="31">
         <activity
-            android:name=".view.main.MainActivity"
+            android:name=".View.UserListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
